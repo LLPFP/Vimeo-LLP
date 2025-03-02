@@ -62,3 +62,54 @@ h1 {
   width: 200px;
   height: 100px;
 }
+
+/* Add this to your custom.scss file */
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.8); /* Translucent background */
+  transition: background-color 0.3s ease; /* Smooth transition for background */
+}
+
+.navbar .nav-item:hover {
+  background-color: rgba(200, 200, 200, 0.5); /* Gray background on hover */
+}
+
+.navbar .nav-link::after {
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.navbar .nav-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.dropdown-menu {
+  display: none; /* Initially hide dropdown */
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Fade in/out effect */
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block; /* Show dropdown on hover */
+  opacity: 1;
+  transition-delay: 0.2s; /* Delay for dropdown to appear */
+}
+
+.dropdown-menu.show {
+  display: block; /* Show dropdown */
+  opacity: 1; /* Fully visible */
+}
+
+.btn-unirse {
+  transition: transform 0.3s ease; /* Animation for button */
+}
+
+.btn-unirse:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+}

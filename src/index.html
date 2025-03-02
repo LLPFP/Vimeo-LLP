@@ -6,58 +6,121 @@
     <title>Vimeo - Luis López Puig</title>
     <link rel="stylesheet" href="./styles/custom.scss" />
     <link rel="stylesheet" href="./styles/bootstrap.scss" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg mt-3">
+      <nav class="navbar navbar-expand-lg mt-1">
         <div class="container-fluid">
           <div
             class="collapse navbar-collapse justify-content-center"
             id="navbarNav">
-            <a class="navbar-brand mb-3" href="#" id="logo">
+            <a class="navbar-brand m5-1 mb-3" href="#">
               <img
                 src="./public/Vimeo_logo.png"
                 alt="VimeoLogo"
                 id="VimeoLogo" />
             </a>
             <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Producto</a>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Producto <i class="bi bi-chevron-down"></i>
+
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Acción 1</a></li>
+                  <li><a class="dropdown-item" href="#">Acción 2</a></li>
+                  <li><a class="dropdown-item" href="#">Acción 3</a></li>
+                </ul>
               </li>
-              <li class="nav-item ms-3">
-                <a class="nav-link" href="#">Soluciones</a>
+              <li class="nav-item dropdown ms-3">
+                <a
+                  class="nav-link"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Soluciones <i class="bi bi-chevron-down"></i>
+
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Acción 1</a></li>
+                  <li><a class="dropdown-item" href="#">Acción 2</a></li>
+                  <li><a class="dropdown-item" href="#">Acción 3</a></li>
+                </ul>
               </li>
-              <li class="nav-item ms-3">
-                <a class="nav-link" href="#">Conocer</a>
+              <li class="nav-item dropdown ms-3">
+                <a
+                  class="nav-link"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Conocer <i class="bi bi-chevron-down"></i>
+
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Acción 1</a></li>
+                  <li><a class="dropdown-item" href="#">Acción 2</a></li>
+                  <li><a class="dropdown-item" href="#">Acción 3</a></li>
+                </ul>
               </li>
-              <li class="nav-item ms-3">
-                <a class="nav-link" href="#">Precio</a>
+              <li class="nav-item dropdown ms-3">
+                <a
+                  class="nav-link"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Precio
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Acción 1</a></li>
+                  <li><a class="dropdown-item" href="#">Acción 2</a></li>
+                  <li><a class="dropdown-item" href="#">Acción 3</a></li>
+                </ul>
               </li>
-              <li class="nav-item ms-3">
-                <a class="nav-link" href="#">Ver</a>
-              </li>
-              <li class="nav-item ms-5"></li>
-              <li class="nav-item ms-5"></li>
-              <li class="nav-item ms-5"></li>
-              <li class="nav-item ms-5"></li>
-              <li class="nav-item ms-5"></li>
-              <li class="nav-item ms-5"></li>
-              <li class="nav-item ms-5"></li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Comunicarse con Ventas</a>
-              </li>
+              <li class="nav-item dropdown ms-3 me-5">
+                <a
+                  class="nav-link"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Ver
+
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Acción 1</a></li>
+                  <li><a class="dropdown-item" href="#">Acción 2</a></li>
+                  <li><a class="dropdown-item" href="#">Acción 3</a></li>
+                </ul>
+              </li>             
+               <li class="nav-item dropdown ms-5">
+                <a
+                  class="nav-link"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Comunicarse con Ventas
+                </a>
+              </li>              </li>
               <li class="nav-item">
                 <button class="btn">Iniciar Sesión</button>
               </li>
               <li class="nav-item alzarbtn">
                 <button class="btn btn-secondary ps-4 pt-2 pb-2 pe-4">
-                  Unirse
-                  <i class="bi bi-arrow-right ms-2 btn btn-primary"></i>
+                  Unirse <i class="bi bi-arrow-right ms-2 btn btn-primary"></i>
                 </button>
               </li>
             </ul>
           </div>
-
           <button
             class="navbar-toggler d-lg-none ms-auto"
             type="button"
