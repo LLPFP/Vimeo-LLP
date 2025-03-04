@@ -11,6 +11,14 @@ body {
   height: 450px;
 }
 
+.producto:hover {
+  transition: all 0.6s ease;
+  a i .bi-chevron-down {
+    transform: rotate(180deg);
+    transition: transform 0.6s ease;
+  }
+}
+
 #laptop {
   margin-top: -25px;
   margin-left: auto;
@@ -63,18 +71,12 @@ h1 {
   height: 100px;
 }
 
-/* Add this to your custom.scss file */
-
 .navbar {
-  background-color: rgba(255, 255, 255, 0.8); /* Translucent background */
-  transition: background-color 0.3s ease; /* Smooth transition for background */
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: background-color 0.3s ease;
 }
 
-.navbar .nav-item:hover {
-  background-color: rgba(200, 200, 200, 0.5); /* Gray background on hover */
-}
-
-.navbar .nav-link::after {
+.navbar .nav-link:after {
   position: absolute;
   left: 50%;
   bottom: -5px;
@@ -90,26 +92,48 @@ h1 {
 }
 
 .dropdown-menu {
-  display: none; /* Initially hide dropdown */
+  display: none;
   opacity: 0;
-  transition: opacity 0.3s ease; /* Fade in/out effect */
+  transition: opacity 0.3s ease;
 }
 
 .dropdown:hover .dropdown-menu {
-  display: block; /* Show dropdown on hover */
+  display: block;
   opacity: 1;
-  transition-delay: 0.2s; /* Delay for dropdown to appear */
+  transition-delay: 0.2s;
 }
 
 .dropdown-menu.show {
-  display: block; /* Show dropdown */
-  opacity: 1; /* Fully visible */
+  display: block;
+  opacity: 1;
 }
 
 .btn-unirse {
-  transition: transform 0.3s ease; /* Animation for button */
+  transition: transform 0.3s ease;
 }
 
 .btn-unirse:hover {
-  transform: scale(1.05); /* Scale effect on hover */
+  transform: scale(1.05);
+}
+
+#dropdownMenu {
+  margin-top: 25px;
+  margin-left: -110px;
+}
+
+#menuDropdown {
+  width: 1280px;
+  margin-left: 10px;
+  margin-top: 50px;
+  height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    margin-left: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+  }
 }

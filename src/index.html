@@ -10,7 +10,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg mt-1">
+      <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
           <div
             class="collapse navbar-collapse justify-content-center"
@@ -22,7 +22,7 @@
                 id="VimeoLogo" />
             </a>
             <ul class="navbar-nav">
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown producto">
                 <a
                   class="nav-link"
                   href="#"
@@ -32,11 +32,159 @@
                   Producto <i class="bi bi-chevron-down"></i>
 
                 </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Acción 1</a></li>
-                  <li><a class="dropdown-item" href="#">Acción 2</a></li>
-                  <li><a class="dropdown-item" href="#">Acción 3</a></li>
-                </ul>
+                <ul class="dropdown-menu" id="dropdownMenu">
+                  <div id="menuDropdown" class="container-fluid">
+                      <div class="row align-items-start col-md-12">
+                        <div class="col-md-3" id="columnas">
+                            <span class="d-flex text-center w-100 text-nowrap">Alojamiento y reproductor</span>
+                            <div class="d-flex text-center align-items-center">
+                            <i class="bi bi-play-fill ms-2 me-2"></i>    
+                            <p class="text-center align-items-center mt-3">
+                              Reproductor de video
+                            </p>
+                          </div>
+                          <div class="d-flex text-center align-items-center">
+                            <i class="bi bi-cloud-arrow-up-fill ms-2 me-2"></i>
+                            <p class="text-center align-items-center mt-3">
+                              Alojamiento de videos
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <span class="d-flex text-center w-100">Creación y Edición</span>
+                          <div class="d-flex text-center align-items-center">
+                            <i class="bi bi-record-circle ms-2 me-2"></i>     
+                            <p class="text-center align-items-center mt-3">
+                              Grabar
+                            </p>
+                          </div>
+                          <div class="d-flex text-center align-items-center">
+                            <i class="bi bi-magic ms-2 me-2"></i>                            
+                            <p class="text-center align-items-center mt-3">
+                              Editor de videos
+                            </p>
+                          </div>
+                          <div class="d-flex text-center align-items-center">
+                            <i class="bi bi-youtube ms-2 me-2"></i>                            
+                            <p class="text-center align-items-center mt-3">
+                              Realizador de videos
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <span class="d-flex text-center w-100">Plataforma</span>
+                          <div class="d-flex text-center align-items-center" id="contenidoMenu">
+                            <i class="bi bi-stars ms-2 me-2"></i>
+                            <p class="text-center align-items-center mt-3">
+                              Vimeo AI
+                            </p>
+                          </div>
+                          <div class="d-flex text-center align-items-center">
+                            <i class="bi bi-bar-chart-fill ms-2 me-2"></i>                            <p class="text-center align-items-center mt-3">
+                              Análisis
+                            </p>
+                          </div>
+                          <div class="d-flex text-center align-items-center">
+                            <i class="bi bi-phone-fill ms-2 me-2"></i>
+                            <p class="text-center align-items-center mt-3">
+                              Móvil
+                            </p>
+                          </div>
+                          <div class="d-flex text-center align-items-center">
+                            <i class="bi bi-code-square ms-2 me-2"></i>
+                            <p class="text-center align-items-center mt-3">
+                              Centro de integraciones
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <span class="d-flex text-center w-100">Nuevos lanzamientos</span>
+                          <div class="d-flex text-center align-items-center">
+                            <i class="bi bi-star-fill ms-2 me-2"></i>
+                            <p class="text-center align-items-center mt-3">
+                              Lanzamiento de otoño de 2024
+                            </p>
+                          </div>
+                          <div class="d-flex text-center align-items-center">
+                            <i class="bi bi-star-fill ms-2 me-2"></i>
+                            <p class="text-center align-items-center mt-3">
+                              Lanzamiento del T3 2024
+                            </p>
+                          </div>
+                          <div class="d-flex text-center align-items-center">
+                            <i class="bi bi-star-fill ms-2 me-2"></i>
+                            <p class="text-center align-items-center mt-3">
+                              Lanzamientos del T2 2024
+                            </p>
+                          </div>
+                          <div class="d-flex text-center align-items-center">
+                            <i class="bi bi-star-fill ms-2 me-2"></i>
+                            <p class="text-center align-items-center mt-3">
+                              Lanzamientos del T1 2024
+                            </p>
+                          </div>
+                        </div> 
+                        <div class="col-md-3">
+                          <span class="d-flex text-center w-100">Gestión de video</span>
+                          <div class="d-flex text-center align-items-center">
+                            <i class="bi bi-collection-play ms-2 me-2"></i>
+                            <p class="text-center align-items-center mt-3">
+                              Videoteca
+                            </p>
+                          </div>
+                          <div class="d-flex text-center align-items-center">
+                            <i class="bi bi-people-fill ms-2 me-2"></i>
+                            <p class="text-center align-items-center mt-3">
+                              Colaboración
+                            </p>
+                          </div>
+                          <div class="d-flex text-center align-items-center">
+                            <i class="bi bi-shield-lock-fill ms-2 me-2"></i>
+                            <p class="text-center align-items-center mt-3">
+                              Seguridad
+                            </p>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3">
+                          <span class="d-flex text-center w-100">Eventos</span>
+                          <div class="d-flex text-center align-items-center">
+                            <i class="bi bi-broadcast ms-2 me-2"></i>
+                            <p class="text-center align-items-center mt-3">
+                              Transmisión en vivo
+                            </p>
+                          </div>
+                          <div class="d-flex text-center align-items-center">
+                            <i class="bi bi-building ms-2 me-2"></i>
+                            <p class="text-center align-items-center mt-3">
+                              Vimeo Venues
+                            </p>
+                          </div>
+                          <div class="d-flex text-center align-items-center">
+                            <i class="bi bi-cast ms-2 me-2"></i>
+                            <p class="text-center align-items-center mt-3">
+                              Seminarios web
+                            </p>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3">
+                          <span class="d-flex text-center w-100">Monetización</span>
+                          <div class="d-flex text-center align-items-center">
+                            <i class="bi bi-play-circle-fill ms-2 me-2"></i>
+                            <p class="text-center align-items-center mt-3">
+                              OTT
+                            </p>
+                          </div>
+                          <div class="d-flex text-center align-items-center">
+                            <i class="bi bi-camera-reels-fill ms-2 me-2"></i>
+                            <p class="text-center align-items-center mt-3">
+                              Video on Demand
+                            </p>
+                          </div>
+                        </div>
+                      </div>                    </div>                
+                  </ul>
               </li>
               <li class="nav-item dropdown ms-3">
                 <a
@@ -137,7 +285,7 @@
     <main>
       <div class="container-fluid">
         <div class="row justify-content-center mt-5">
-          <div class="col-md-6 text-center">
+          <div class="col-md-6 text-center mt-5">
             <h1 class="text-center fw-bold display-4">
               Haga más con sus videos
             </h1>
