@@ -3,27 +3,152 @@ body {
 }
 
 #VimeoLogo {
-  width: 60px;
+  width: 80px;
+}
+
+#comunicarseConVentas {
+  font-size: 18px;
+}
+
+#iniciarSesion {
+  font-size: 17px;
+  margin-top: 2px;
+}
+
+#btnUnirse {
+  background-color: rgb(223, 228, 234);
+  color: #000; /* El texto siempre será negro */
+  position: relative;
+  overflow: hidden;
+  border: none;
+  border-radius: 8px;
+  margin-top: 5px;
+  font-size: 17px;
+  transition: transform 0.3s ease;
+}
+
+#btnUnirse #divFlecha {
+  background-color: rgb(37, 209, 254);
+  border-radius: 7px;
+}
+
+#divFlecha2 {
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+
+#btnUnirse:hover {
+  background: linear-gradient(
+    to left,
+    rgb(37, 209, 254) 50%,
+    rgb(223, 228, 234) 50%
+  );
+  background-size: 200% 100%;
+  background-position: right;
+  transition: background-position 0.45s ease;
+  right: 0;
+
+  #divFlecha {
+    background-color: rgb(19, 167, 206);
+    transition: background-color 0.45s ease;
+
+    .segundaFlecha {
+      transform: translateX(100%);
+      transition: transform 0.45s ease;
+    }
+    .primeraFlecha {
+      transform: translateX(100%);
+      transition: transform 0.45s ease;
+    }
+  }
+
+  #divFlecha2 {
+    background-color: rgb(19, 167, 206);
+    transition: background-color 0.45s ease;
+
+    .segundaFlecha {
+      transform: translateX(100%);
+      transition: transform 0.45s ease;
+    }
+    .primeraFlecha {
+      transform: translateX(100%);
+      transition: transform 0.45s ease;
+    }
+  }
+}
+
+#divFlecha {
+  overflow: hidden;
+  position: relative;
+  border-radius: 6px;
+}
+
+.primeraFlecha {
+  padding-left: -200px;
+  position: absolute;
+  padding-top: 2px;
+}
+
+#btnUnirse:not(:hover) {
+  background: linear-gradient(
+    to left,
+    rgb(37, 209, 254) 50%,
+    rgb(223, 228, 234) 50%
+  );
+  background-size: 200% 100%;
+  background-position: left;
+  transition: background-position 0.45s ease;
+
+  #divFlecha {
+    background-color: rgb(37, 209, 254);
+    transition: background-color 0.45s ease;
+
+    .segundaFlecha {
+      transform: translateX(0);
+      transition: transform 0.45s ease;
+    }
+    .primeraFlecha {
+      transform: translateX(-125%);
+      transition: opacity 0.45s ease, transform 0.45s ease;
+    }
+  }
+  #divFlecha2 {
+    background-color: rgb(255, 255, 255);
+    transition: background-color 0.45s ease;
+
+    .segundaFlecha {
+      transform: translateX(0);
+      transition: transform 0.45s ease;
+    }
+    .primeraFlecha {
+      transform: translateX(-125%);
+      transition: opacity 0.45s ease, transform 0.45s ease;
+    }
+  }
 }
 
 #laptopImg {
-  width: 1000px;
-  height: 450px;
+  height: 650px;
+  width: 1290px;
+  max-width: auto;
+}
+
+#laptop {
+  margin-top: 40px;
+  margin-left: auto;
+  height: 490px;
+  width: 100%;
+  margin-bottom: 100px;
 }
 
 .producto:hover {
   transition: all 0.6s ease;
-  a i .bi-chevron-down {
+
+  .flecha1 {
     transform: rotate(180deg);
     transition: transform 0.6s ease;
   }
-}
-
-#laptop {
-  margin-top: -25px;
-  margin-left: auto;
-  width: 622px;
-  height: 445px;
 }
 
 .shadow-box {
@@ -57,7 +182,7 @@ h1 {
 
 #bannerContainer {
   margin: 0 auto;
-  max-width: 950px;
+  max-width: 1230px;
   text-align: left;
 }
 
@@ -72,8 +197,14 @@ h1 {
 }
 
 .navbar {
-  background-color: rgba(255, 255, 255, 0.6);
-  transition: background-color 0.3s ease;
+  background-color: rgba(250, 250, 250);
+  transition: background-color 0.4s ease;
+  background-color: transparent;
+  backdrop-filter: blur(15px);
+}
+
+.navbar a {
+  color: black;
 }
 
 .navbar .nav-link:after {
