@@ -393,25 +393,51 @@ h1 {
   width: 20%;
 }
 
-.marquee-container {
-  background-color: #ffffff;
-  mask-image: linear-gradient(
-    to right,
-    transparent,
-    white 20%,
-    white 80%,
-    transparent
-  );
-  -webkit-mask-image: linear-gradient(
-    to right,
-    transparent,
-    white 20%,
-    white 80%,
-    transparent
-  );
+.carrousel-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
 
-  .slider-image {
-    opacity: 1;
-    visibility: visible;
+.carrousel-container::before,
+.carrousel-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  z-index: 1;
+}
+
+.carrousel-container::before {
+  left: 0;
+  background: linear-gradient(to right, #f1f5f9, transparent);
+}
+
+.carrousel-container::after {
+  right: 0;
+  background: linear-gradient(to left, #f1f5f9, transparent);
+}
+
+#carrousel {
+  display: flex;
+  gap: 5px;
+  width: max-content;
+  animation: marquee-container 30s linear infinite;
+}
+
+@keyframes marquee-container {
+  from {
+    transform: translateX(0);
   }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.slider-image {
+  height: 80px;
+  object-fit: contain;
+  padding-right: 105px;
+  margin-bottom: 50px;
 }
