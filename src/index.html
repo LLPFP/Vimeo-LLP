@@ -4,24 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vimeo - Luis López Puig</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
     <link rel="stylesheet" href="../src/styles/custom.scss" />
     <link rel="stylesheet" href="../src/styles/bootstrap.scss" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg fixed-top fw-bold ">
-        <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg fixed-top fw-bold">
+        <div class="container">
           <div
             class="collapse navbar-collapse justify-content-center"
             id="navbarNav">
-            <a class="navbar-brand mb-1 d-flex justify-content-center" href="/Home">
+            <a
+              class="navbar-brand mb-1 d-flex justify-content-center"
+              href="/Home">
               <img
                 src="./public/Vimeo_logo.png"
                 alt="VimeoLogo"
                 id="VimeoLogo" />
-            </a>           
-             <ul class="navbar-nav">
+            </a>
+            <ul class="navbar-nav">
               <li class="nav-item dropdown menuFlecha">
                 <a
                   class="nav-link itemsMenu"
@@ -30,119 +40,195 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false">
                   Producto <i class="bi bi-chevron-down flechaMenu"></i>
-
                 </a>
                 <ul class="dropdown-menu" id="dropdownMenu">
-                  <div id="menuDropdown" class="container-fluid">
+                  <li>
+                    <div id="menuDropdown" class="container">
                       <div class="row align-items-start col-md-12">
                         <div class="col-md-3" id="columnas">
-                            <span class="d-flex text-center w-100 text-nowrap">Alojamiento y reproductor</span>
-                            <div class="d-flex text-center align-items-center">
-                            <i class="bi bi-play-fill ms-2 me-2"></i>    
+                          <span class="d-flex text-center w-100 text-nowrap"
+                            >Alojamiento y reproductor</span
+                          >
+                          <div class="d-flex text-center align-items-center">
+                            <i class="bi bi-play-fill ms-2 me-2"></i>
                             <p class="text-center align-items-center mt-3">
-                              <a href="#" style="text-decoration: none; color: inherit;">Reproductor de video</a>
+                              <a
+                                href="#"
+                                style="text-decoration: none; color: inherit"
+                                >Reproductor de video</a
+                              >
                             </p>
                           </div>
                           <div class="d-flex text-center align-items-center">
                             <i class="bi bi-cloud-arrow-up-fill ms-2 me-2"></i>
                             <p class="text-center align-items-center mt-3">
-                              <a href="#" style="text-decoration: none; color: inherit;">Alojamiento de videos</a>
+                              <a
+                                href="#"
+                                style="text-decoration: none; color: inherit"
+                                >Alojamiento de videos</a
+                              >
                             </p>
                           </div>
                         </div>
                         <div class="col-md-3">
-                          <span class="d-flex text-center w-100">Creación y Edición</span>
+                          <span class="d-flex text-center w-100"
+                            >Creación y Edición</span
+                          >
                           <div class="d-flex text-center align-items-center">
-                            <i class="bi bi-record-circle ms-2 me-2"></i>     
+                            <i class="bi bi-record-circle ms-2 me-2"></i>
                             <p class="text-center align-items-center mt-3">
-                              <a href="#" style="text-decoration: none; color: inherit;">Grabar</a>
+                              <a
+                                href="#"
+                                style="text-decoration: none; color: inherit"
+                                >Grabar</a
+                              >
                             </p>
                           </div>
                           <div class="d-flex text-center align-items-center">
-                            <i class="bi bi-magic ms-2 me-2"></i>                            
+                            <i class="bi bi-magic ms-2 me-2"></i>
                             <p class="text-center align-items-center mt-3">
-                              <a href="#" style="text-decoration: none; color: inherit;">Editor de videos</a>
+                              <a
+                                href="#"
+                                style="text-decoration: none; color: inherit"
+                                >Editor de videos</a
+                              >
                             </p>
                           </div>
                           <div class="d-flex text-center align-items-center">
-                            <i class="bi bi-youtube ms-2 me-2"></i>                            
+                            <i class="bi bi-youtube ms-2 me-2"></i>
                             <p class="text-center align-items-center mt-3">
-                              <a href="#" style="text-decoration: none; color: inherit;">Realizador de videos</a>
+                              <a
+                                href="#"
+                                style="text-decoration: none; color: inherit"
+                                >Realizador de videos</a
+                              >
                             </p>
                           </div>
                         </div>
                         <div class="col-md-3">
-                          <span class="d-flex text-center w-100">Plataforma</span>
-                          <div class="d-flex text-center align-items-center" id="contenidoMenu">
+                          <span class="d-flex text-center w-100"
+                            >Plataforma</span
+                          >
+                          <div
+                            class="d-flex text-center align-items-center"
+                            id="contenidoMenu">
                             <i class="bi bi-stars ms-2 me-2"></i>
                             <p class="text-center align-items-center mt-3">
-                              <a href="#" style="text-decoration: none; color: inherit;">Vimeo AI</a>
+                              <a
+                                href="#"
+                                style="text-decoration: none; color: inherit"
+                                >Vimeo AI</a
+                              >
                             </p>
                           </div>
                           <div class="d-flex text-center align-items-center">
-                            <i class="bi bi-bar-chart-fill ms-2 me-2"></i>                            
+                            <i class="bi bi-bar-chart-fill ms-2 me-2"></i>
                             <p class="text-center align-items-center mt-3">
-                              <a href="#" style="text-decoration: none; color: inherit;">Análisis</a>
+                              <a
+                                href="#"
+                                style="text-decoration: none; color: inherit"
+                                >Análisis</a
+                              >
                             </p>
                           </div>
                           <div class="d-flex text-center align-items-center">
                             <i class="bi bi-phone-fill ms-2 me-2"></i>
                             <p class="text-center align-items-center mt-3">
-                              <a href="#" style="text-decoration: none; color: inherit;">Móvil</a>
+                              <a
+                                href="#"
+                                style="text-decoration: none; color: inherit"
+                                >Móvil</a
+                              >
                             </p>
                           </div>
                           <div class="d-flex text-center align-items-center">
                             <i class="bi bi-code-square ms-2 me-2"></i>
                             <p class="text-center align-items-center mt-3">
-                              <a href="#" style="text-decoration: none; color: inherit;">Centro de integraciones</a>
+                              <a
+                                href="#"
+                                style="text-decoration: none; color: inherit"
+                                >Centro de integraciones</a
+                              >
                             </p>
                           </div>
                         </div>
                         <div class="col-md-3">
-                          <span class="d-flex text-center w-100">Nuevos lanzamientos</span>
+                          <span class="d-flex text-center w-100"
+                            >Nuevos lanzamientos</span
+                          >
                           <div class="d-flex text-center align-items-center">
                             <i class="bi bi-star-fill ms-2 me-2"></i>
                             <p class="text-center align-items-center mt-3">
-                              <a href="#" style="text-decoration: none; color: inherit;">Lanzamiento de otoño de 2024</a>
+                              <a
+                                href="#"
+                                style="text-decoration: none; color: inherit"
+                                >Lanzamiento de otoño de 2024</a
+                              >
                             </p>
                           </div>
                           <div class="d-flex text-center align-items-center">
                             <i class="bi bi-star-fill ms-2 me-2"></i>
                             <p class="text-center align-items-center mt-3">
-                              <a href="#" style="text-decoration: none; color: inherit;">Lanzamiento del T3 2024</a>
+                              <a
+                                href="#"
+                                style="text-decoration: none; color: inherit"
+                                >Lanzamiento del T3 2024</a
+                              >
                             </p>
                           </div>
                           <div class="d-flex text-center align-items-center">
                             <i class="bi bi-star-fill ms-2 me-2"></i>
                             <p class="text-center align-items-center mt-3">
-                              <a href="#" style="text-decoration: none; color: inherit;">Lanzamientos del T2 2024</a>
+                              <a
+                                href="#"
+                                style="text-decoration: none; color: inherit"
+                                >Lanzamientos del T2 2024</a
+                              >
                             </p>
                           </div>
                           <div class="d-flex text-center align-items-center">
                             <i class="bi bi-star-fill ms-2 me-2"></i>
                             <p class="text-center align-items-center mt-3">
-                              <a href="#" style="text-decoration: none; color: inherit;">Lanzamientos del T1 2024</a>
+                              <a
+                                href="#"
+                                style="text-decoration: none; color: inherit"
+                                >Lanzamientos del T1 2024</a
+                              >
                             </p>
                           </div>
-                        </div> 
+                        </div>
                         <div class="col-md-3">
-                          <span class="d-flex text-center w-100">Gestión de video</span>
+                          <span class="d-flex text-center w-100"
+                            >Gestión de video</span
+                          >
                           <div class="d-flex text-center align-items-center">
                             <i class="bi bi-collection-play ms-2 me-2"></i>
                             <p class="text-center align-items-center mt-3">
-                              <a href="#" style="text-decoration: none; color: inherit;">Videoteca</a>
+                              <a
+                                href="#"
+                                style="text-decoration: none; color: inherit"
+                                >Videoteca</a
+                              >
                             </p>
                           </div>
                           <div class="d-flex text-center align-items-center">
                             <i class="bi bi-people-fill ms-2 me-2"></i>
                             <p class="text-center align-items-center mt-3">
-                              <a href="#" style="text-decoration: none; color: inherit;">Colaboración</a>
+                              <a
+                                href="#"
+                                style="text-decoration: none; color: inherit"
+                                >Colaboración</a
+                              >
                             </p>
                           </div>
                           <div class="d-flex text-center align-items-center">
                             <i class="bi bi-shield-lock-fill ms-2 me-2"></i>
                             <p class="text-center align-items-center mt-3">
-                              <a href="#" style="text-decoration: none; color: inherit;">Seguridad</a>
+                              <a
+                                href="#"
+                                style="text-decoration: none; color: inherit"
+                                >Seguridad</a
+                              >
                             </p>
                           </div>
                         </div>
@@ -152,41 +238,64 @@
                           <div class="d-flex text-center align-items-center">
                             <i class="bi bi-broadcast ms-2 me-2"></i>
                             <p class="text-center align-items-center mt-3">
-                              <a href="#" style="text-decoration: none; color: inherit;">Transmisión en vivo</a>
+                              <a
+                                href="#"
+                                style="text-decoration: none; color: inherit"
+                                >Transmisión en vivo</a
+                              >
                             </p>
                           </div>
                           <div class="d-flex text-center align-items-center">
                             <i class="bi bi-building ms-2 me-2"></i>
                             <p class="text-center align-items-center mt-3">
-                              <a href="#" style="text-decoration: none; color: inherit;">Vimeo Venues</a>
+                              <a
+                                href="#"
+                                style="text-decoration: none; color: inherit"
+                                >Vimeo Venues</a
+                              >
                             </p>
                           </div>
                           <div class="d-flex text-center align-items-center">
                             <i class="bi bi-cast ms-2 me-2"></i>
                             <p class="text-center align-items-center mt-3">
-                              <a href="#" style="text-decoration: none; color: inherit;">Seminarios web</a>
+                              <a
+                                href="#"
+                                style="text-decoration: none; color: inherit"
+                                >Seminarios web</a
+                              >
                             </p>
                           </div>
                         </div>
 
                         <div class="col-md-3">
-                          <span class="d-flex text-center w-100">Monetización</span>
+                          <span class="d-flex text-center w-100"
+                            >Monetización</span
+                          >
                           <div class="d-flex text-center align-items-center">
                             <i class="bi bi-play-circle-fill ms-2 me-2"></i>
                             <p class="text-center align-items-center mt-3">
-                              <a href="#" style="text-decoration: none; color: inherit;">OTT</a>
+                              <a
+                                href="#"
+                                style="text-decoration: none; color: inherit"
+                                >OTT</a
+                              >
                             </p>
                           </div>
                           <div class="d-flex text-center align-items-center">
                             <i class="bi bi-camera-reels-fill ms-2 me-2"></i>
                             <p class="text-center align-items-center mt-3">
-                              <a href="#" style="text-decoration: none; color: inherit;">Video on Demand</a>
+                              <a
+                                href="#"
+                                style="text-decoration: none; color: inherit"
+                                >Video on Demand</a
+                              >
                             </p>
                           </div>
                         </div>
-                      </div>                  
-                     </div>                
-                  </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
               </li>
               <li class="nav-item dropdown ms-1 menuFlecha">
                 <a
@@ -196,69 +305,146 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false">
                   Soluciones <i class="bi bi-chevron-down flechaMenu"></i>
-
                 </a>
                 <ul class="dropdown-menu" id="dropdownMenu2">
-                  <div id="menuDropdown" class="container-fluid">
-                    <div class="row align-items-start col-md-12">
-                      <div class="col-md-4 ms-2">
-                        <span class="d-flex text-center w-100">Vimeo para</span>
-                        <div class="d-flex text-center align-items-center">
-                          <i class="bi bi-building ms-2 me-2"></i>
-                          <p class="text-center align-items-center mt-3"><a href="#" style="text-decoration: none; color: inherit;">Empresas</a></p>
+                  <li>
+                    <div id="menuDropdown2" class="container">
+                      <div class="row align-items-start col-md-12">
+                        <div class="col-md-4 ms-2">
+                          <span class="d-flex text-center w-100"
+                            >Vimeo para</span
+                          >
+                          <div class="d-flex text-center align-items-center">
+                            <i class="bi bi-building ms-2 me-2"></i>
+                            <p class="text-center align-items-center mt-3">
+                              <a
+                                href="#"
+                                style="text-decoration: none; color: inherit"
+                                >Empresas</a
+                              >
+                            </p>
+                          </div>
+                          <div class="d-flex text-center align-items-center">
+                            <i class="bi bi-shop ms-2 me-2"></i>
+                            <p class="text-center align-items-center mt-2">
+                              <a
+                                href="#"
+                                style="text-decoration: none; color: inherit"
+                                >Pequeñas empresas</a
+                              >
+                            </p>
+                          </div>
+                          <div class="d-flex text-center align-items-center">
+                            <i class="bi bi-palette ms-2 me-2"></i>
+                            <p class="text-center align-items-center mt-2">
+                              <a
+                                href="#"
+                                style="text-decoration: none; color: inherit"
+                                >Profesionales creativos</a
+                              >
+                            </p>
+                          </div>
+                          <div class="d-flex text-center align-items-center">
+                            <i class="bi bi-currency-dollar ms-2 me-2"></i>
+                            <p class="text-center align-items-center mt-2">
+                              <a
+                                href="#"
+                                style="text-decoration: none; color: inherit"
+                                >Monetización de videos</a
+                              >
+                            </p>
+                          </div>
+                          <div class="d-flex text-center align-items-center">
+                            <i class="bi bi-mortarboard ms-2 me-2"></i>
+                            <p class="text-center align-items-center mt-2">
+                              <a
+                                href="#"
+                                style="text-decoration: none; color: inherit"
+                                >Educadores</a
+                              >
+                            </p>
+                          </div>
+                          <div class="d-flex text-center align-items-center">
+                            <i class="bi bi-graph-up ms-2 me-2"></i>
+                            <p class="text-center align-items-center mt-2">
+                              <a
+                                href="#"
+                                style="text-decoration: none; color: inherit"
+                                >Profesionales del marketing</a
+                              >
+                            </p>
+                          </div>
+                          <div class="d-flex text-center align-items-center">
+                            <i class="bi bi-people ms-2 me-2"></i>
+                            <p class="text-center align-items-center mt-2">
+                              <a
+                                href="#"
+                                style="text-decoration: none; color: inherit"
+                                >Comunicaciones corporativas</a
+                              >
+                            </p>
+                          </div>
+                          <div class="d-flex text-center align-items-center">
+                            <i class="bi bi-book ms-2 me-2"></i>
+                            <p class="text-center align-items-center mt-2">
+                              <a
+                                href="#"
+                                style="text-decoration: none; color: inherit"
+                                >Aprendizaje y desarrollo</a
+                              >
+                            </p>
+                          </div>
                         </div>
-                        <div class="d-flex text-center align-items-center">
-                          <i class="bi bi-shop ms-2 me-2"></i>
-                          <p class="text-center align-items-center mt-2"><a href="#" style="text-decoration: none; color: inherit;">Pequeñas empresas</a></p>
+                        <div class="col-md-3">
+                          <span class="d-flex text-center w-100"
+                            >Soluciones</span
+                          >
+                          <div class="d-flex text-center align-items-center">
+                            <i class="bi bi-display ms-2 me-2"></i>
+                            <p class="text-center align-items-center mt-3">
+                              <a
+                                href="#"
+                                style="text-decoration: none; color: inherit"
+                                >Vimeo Central</a
+                              >
+                            </p>
+                          </div>
+                          <div class="d-flex text-center align-items-center">
+                            <i class="bi bi-megaphone ms-2 me-2"></i>
+                            <p class="text-center align-items-center mt-2">
+                              <a
+                                href="#"
+                                style="text-decoration: none; color: inherit"
+                                >Vimeo Marketing</a
+                              >
+                            </p>
+                          </div>
+                          <div class="d-flex text-center align-items-center">
+                            <i class="bi bi-play-circle ms-2 me-2"></i>
+                            <p class="text-center align-items-center mt-2">
+                              <a
+                                href="#"
+                                style="text-decoration: none; color: inherit"
+                                >Vimeo OTT</a
+                              >
+                            </p>
+                          </div>
                         </div>
-                        <div class="d-flex text-center align-items-center">
-                          <i class="bi bi-palette ms-2 me-2"></i>
-                          <p class="text-center align-items-center mt-2"><a href="#" style="text-decoration: none; color: inherit;">Profesionales creativos</a></p>
-                        </div>
-                        <div class="d-flex text-center align-items-center">
-                          <i class="bi bi-currency-dollar ms-2 me-2"></i>
-                          <p class="text-center align-items-center mt-2"><a href="#" style="text-decoration: none; color: inherit;">Monetización de videos</a></p>
-                        </div>
-                        <div class="d-flex text-center align-items-center">
-                          <i class="bi bi-mortarboard ms-2 me-2"></i>
-                          <p class="text-center align-items-center mt-2"><a href="#" style="text-decoration: none; color: inherit;">Educadores</a></p>
-                        </div>
-                        <div class="d-flex text-center align-items-center">
-                          <i class="bi bi-graph-up ms-2 me-2"></i>
-                          <p class="text-center align-items-center mt-2"><a href="#" style="text-decoration: none; color: inherit;">Profesionales del marketing</a></p>
-                        </div>
-                        <div class="d-flex text-center align-items-center">
-                          <i class="bi bi-people ms-2 me-2"></i>
-                          <p class="text-center align-items-center mt-2"><a href="#" style="text-decoration: none; color: inherit;">Comunicaciones corporativas</a></p>
-                        </div>
-                        <div class="d-flex text-center align-items-center">
-                          <i class="bi bi-book ms-2 me-2"></i>
-                          <p class="text-center align-items-center mt-2"><a href="#" style="text-decoration: none; color: inherit;">Aprendizaje y desarrollo</a></p>
-                        </div>
-                      </div>
-                      <div class="col-md-3">
-                        <span class="d-flex text-center w-100">Soluciones</span>
-                        <div class="d-flex text-center align-items-center">
-                          <i class="bi bi-display ms-2 me-2"></i>
-                          <p class="text-center align-items-center mt-3"><a href="#" style="text-decoration: none; color: inherit;">Vimeo Central</a></p>
-                        </div>
-                        <div class="d-flex text-center align-items-center">
-                          <i class="bi bi-megaphone ms-2 me-2"></i>
-                          <p class="text-center align-items-center mt-2"><a href="#" style="text-decoration: none; color: inherit;">Vimeo Marketing</a></p>
-                        </div>
-                        <div class="d-flex text-center align-items-center">
-                          <i class="bi bi-play-circle ms-2 me-2"></i>
-                          <p class="text-center align-items-center mt-2"><a href="#" style="text-decoration: none; color: inherit;">Vimeo OTT</a></p>
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="text-start align-items-center">
-                            <img src="./public/VimeoCentral.avif" alt="logo vimeo" class="img-fluid " id="vimeoCentral">
-                            <p class=" align-items-center mt-5 fs-4">Conozca Vimeo Central</p>
+                        <div class="col-md-4">
+                          <div class="text-start align-items-center">
+                            <img
+                              src="./public/VimeoCentral.avif"
+                              alt="logo vimeo"
+                              class="img-fluid"
+                              id="vimeoCentral" />
+                            <p class="align-items-center mt-5 fs-4">
+                              Conozca Vimeo Central
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>                
+                  </li>
                 </ul>
               </li>
               <li class="nav-item dropdown ms-1 menuFlecha">
@@ -269,69 +455,140 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false">
                   Conocer <i class="bi bi-chevron-down flechaMenu"></i>
-
                 </a>
                 <ul class="dropdown-menu" id="dropdownMenu3">
-                  <div id="menuDropdown3" class="container-fluid">
-                    <div class="row align-items-start col-md-12">
-                      <div class="col-md-3 ms-2">
-                        <span class="d-flex text-center w-100">Resources</span>
-                        <div class="d-flex text-center align-items-center">
-                          <i class="bi bi-people ms-2 me-2"></i>
-                          <p class="text-center align-items-center mt-3"><a href="#" style="text-decoration: none; color: inherit;">Historias de los clientes</a></p>
+                  <li>
+                    <div id="menuDropdown3" class="container">
+                      <div class="row align-items-start col-md-12">
+                        <div class="col-md-3 ms-2">
+                          <span class="d-flex text-center w-100"
+                            >Resources</span
+                          >
+                          <div class="d-flex text-center align-items-center">
+                            <i class="bi bi-people ms-2 me-2"></i>
+                            <p class="text-center align-items-center mt-3">
+                              <a
+                                href="#"
+                                style="text-decoration: none; color: inherit"
+                                >Historias de los clientes</a
+                              >
+                            </p>
+                          </div>
+                          <div class="d-flex text-center align-items-center">
+                            <i class="bi bi-pencil ms-2 me-2"></i>
+                            <p class="text-center align-items-center mt-2">
+                              <a
+                                href="#"
+                                style="text-decoration: none; color: inherit"
+                                >Blog</a
+                              >
+                            </p>
+                          </div>
+                          <div class="d-flex text-center align-items-center">
+                            <i class="bi bi-calendar-event ms-2 me-2"></i>
+                            <p class="text-center align-items-center mt-2">
+                              <a
+                                href="#"
+                                style="text-decoration: none; color: inherit"
+                                >Eventos y seminarios web</a
+                              >
+                            </p>
+                          </div>
+                          <div class="d-flex text-center align-items-center">
+                            <i class="bi bi-book ms-2 me-2"></i>
+                            <p class="text-center align-items-center mt-2">
+                              <a
+                                href="#"
+                                style="text-decoration: none; color: inherit"
+                                >Guías</a
+                              >
+                            </p>
+                          </div>
+                          <div class="d-flex text-center align-items-center">
+                            <i class="bi bi-camera-video ms-2 me-2"></i>
+                            <p class="text-center align-items-center mt-2">
+                              <a
+                                href="#"
+                                style="text-decoration: none; color: inherit"
+                                >Escuela de video</a
+                              >
+                            </p>
+                          </div>
+                          <div class="d-flex text-center align-items-center">
+                            <i class="bi bi-question-circle ms-2 me-2"></i>
+                            <p class="text-center align-items-center mt-2">
+                              <a
+                                href="#"
+                                style="text-decoration: none; color: inherit"
+                                >Centro de ayuda</a
+                              >
+                            </p>
+                          </div>
                         </div>
-                        <div class="d-flex text-center align-items-center">
-                          <i class="bi bi-pencil ms-2 me-2"></i>
-                          <p class="text-center align-items-center mt-2"><a href="#" style="text-decoration: none; color: inherit;">Blog</a></p>
+                        <div class="col-md-4">
+                          <span class="d-flex text-center w-100">Conectar</span>
+                          <div class="d-flex text-center align-items-center">
+                            <i class="bi bi-people-fill ms-2 me-2"></i>
+                            <p class="text-center align-items-center mt-3">
+                              <a
+                                href="#"
+                                style="text-decoration: none; color: inherit"
+                                >Comunidad</a
+                              >
+                            </p>
+                          </div>
+                          <div class="d-flex text-center align-items-center">
+                            <i class="bi bi-code-slash ms-2 me-2"></i>
+                            <p class="text-center align-items-center mt-2">
+                              <a
+                                href="#"
+                                style="text-decoration: none; color: inherit"
+                                >Programadores</a
+                              >
+                            </p>
+                          </div>
+                          <div class="d-flex text-center align-items-center">
+                            <i class="bi bi-handshake ms-2 me-2"></i>
+                            <p class="text-center align-items-center mt-2">
+                              <a
+                                href="#"
+                                style="text-decoration: none; color: inherit"
+                                >Convertirse en socio</a
+                              >
+                            </p>
+                          </div>
+                          <div class="d-flex text-center align-items-center">
+                            <i class="bi bi-person-video3 ms-2 me-2"></i>
+                            <p class="text-center align-items-center mt-2">
+                              <a
+                                href="#"
+                                style="text-decoration: none; color: inherit"
+                                >Contratar a un profesional de video</a
+                              >
+                            </p>
+                          </div>
                         </div>
-                        <div class="d-flex text-center align-items-center">
-                          <i class="bi bi-calendar-event ms-2 me-2"></i>
-                          <p class="text-center align-items-center mt-2"><a href="#" style="text-decoration: none; color: inherit;">Eventos y seminarios web</a></p>
-                        </div>
-                        <div class="d-flex text-center align-items-center">
-                          <i class="bi bi-book ms-2 me-2"></i>
-                          <p class="text-center align-items-center mt-2"><a href="#" style="text-decoration: none; color: inherit;">Guías</a></p>
-                        </div>
-                        <div class="d-flex text-center align-items-center">
-                          <i class="bi bi-camera-video ms-2 me-2"></i>
-                          <p class="text-center align-items-center mt-2"><a href="#" style="text-decoration: none; color: inherit;">Escuela de video</a></p>
-                        </div>
-                        <div class="d-flex text-center align-items-center">
-                          <i class="bi bi-question-circle ms-2 me-2"></i>
-                          <p class="text-center align-items-center mt-2"><a href="#" style="text-decoration: none; color: inherit;">Centro de ayuda</a></p>
-                        </div>
-                      
-                      </div>
-                      <div class="col-md-4">
-                        <span class="d-flex text-center w-100">Conectar</span>
-                        <div class="d-flex text-center align-items-center">
-                          <i class="bi bi-people-fill ms-2 me-2"></i>
-                          <p class="text-center align-items-center mt-3"><a href="#" style="text-decoration: none; color: inherit;">Comunidad</a></p>
-                        </div>
-                        <div class="d-flex text-center align-items-center">
-                          <i class="bi bi-code-slash ms-2 me-2"></i>
-                          <p class="text-center align-items-center mt-2"><a href="#" style="text-decoration: none; color: inherit;">Programadores</a></p>
-                        </div>
-                        <div class="d-flex text-center align-items-center">
-                          <i class="bi bi-handshake ms-2 me-2"></i>
-                          <p class="text-center align-items-center mt-2"><a href="#" style="text-decoration: none; color: inherit;">Convertirse en socio</a></p>
-                        </div>
-                        <div class="d-flex text-center align-items-center">
-                          <i class="bi bi-person-video3 ms-2 me-2"></i>
-                          <p class="text-center align-items-center mt-2"><a href="#" style="text-decoration: none; color: inherit;">Contratar a un profesional de video</a></p>
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="text-start align-items-center">
-                            <img src="./public/VerDemostracion.avif" alt="logo vimeo" class="img-fluid " id="vimeoCentral">
-                            <i class="bi bi-youtube" id="verDemostracionIcono"></i>
-                            
-                            <p class=" align-items-center mt-5 fs-4">Ver demostracion</p>
+                        <div class="col-md-4">
+                          <div class="text-start align-items-center">
+                            <img
+                              src="./public/VerDemostracion.avif"
+                              alt="logo vimeo"
+                              class="img-fluid"
+                              id="verDemostracion" />
+                            <i
+                              class="bi bi-youtube"
+                              id="verDemostracionIcono"></i>
+
+                            <p class="align-items-center mt-5 fs-4">
+                              Ver demostracion
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>               
-                 </ul>                              </li>
+                  </li>
+                </ul>
+              </li>
               <li class="nav-item dropdown ms-1">
                 <a
                   class="nav-link itemsMenu"
@@ -341,7 +598,6 @@
                   aria-expanded="false">
                   Precio
                 </a>
-                
               </li>
               <li class="nav-item dropdown me-5">
                 <a
@@ -351,12 +607,10 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false">
                   Ver
-
                 </a>
-                
-              </li>   
-              <li class="ms-5 me-5"></li>          
-               <li class="nav-item dropdown ms-5" id="comunicarseConVentas">
+              </li>
+              <li class="ms-5 me-5"></li>
+              <li class="nav-item dropdown ms-5" id="comunicarseConVentas">
                 <a
                   class="nav-link"
                   href="#"
@@ -365,14 +619,24 @@
                   aria-expanded="false">
                   Comunicarse con Ventas
                 </a>
-              </li>              </li>
+              </li>
+
               <li class="nav-item">
-                <button class="btn fw-bold" id="iniciarSesion">Iniciar Sesión</button>
+                <button class="btn fw-bold" id="iniciarSesion">
+                  Iniciar Sesión
+                </button>
               </li>
               <li class="nav-item alzarbtn">
-                <button class="btn ps-3 pb-2 pe-3 fw-bold" id="btnUnirse">
-                  Unirse <div class="ms-2 d-flex align-items-center d-inline-flex" id="divFlecha"><i class="bi bi-arrow-right bt primeraFlecha"></i><i class="bi bi-arrow-right ms-1 segundaFlecha me-1 btn pt-1 pb-1 "></i></div>
-                </button>
+                <div class="btn ps-3 pb-2 pe-3 fw-bold" id="btnUnirse">
+                  Unirse
+                  <div
+                    class="ms-2 d-flex align-items-center d-inline-flex"
+                    id="divFlecha">
+                    <i class="bi bi-arrow-right bt primeraFlecha"></i
+                    ><i
+                      class="bi bi-arrow-right ms-1 segundaFlecha me-1 btn pt-1 pb-1"></i>
+                  </div>
+                </div>
               </li>
             </ul>
           </div>
@@ -391,7 +655,7 @@
     </header>
     <main>
       <div class="container-fluid">
-        <div class="row justify-content-center mt-5 ">
+        <div class="row justify-content-center mt-5">
           <div class="col-md-6 text-center mt-3 w-100">
             <h1 class="text-center fw-bold display-1">
               Haga más con sus videos
@@ -402,13 +666,29 @@
             </p>
             <div class="mt-4">
               <button class="btn ps-4 pt-2 pb-2 pe-3 fw-bold" id="btnAzul">
-                Ver los planes <div class="ms-2 d-flex align-items-center d-inline-flex" id="divFlecha"><i class="bi bi-arrow-right primeraFlechaAzul"></i><i class="bi bi-arrow-right ms-1 segundaFlecha btn pt-1 pb-1 "></i></div>
+                Ver los planes
+                <div
+                  class="ms-2 d-flex align-items-center d-inline-flex"
+                  id="divFlecha">
+                  <i class="bi bi-arrow-right primeraFlechaAzul"></i
+                  ><i
+                    class="bi bi-arrow-right ms-1 segundaFlecha btn pt-1 pb-1"></i>
+                </div>
               </button>
               <button class="btn ps-4 pt-2 pb-2 pe-3 fw-bold" id="btnUnirse">
-                Unirse gratis <div class="ms-2 d-flex align-items-center d-inline-flex" id="divFlecha2"><i class="bi bi-arrow-right primeraFlecha"></i><i class="bi bi-arrow-right ms-1 segundaFlecha me-1 btn pt-1 pb-1 "></i></div>
+                Unirse gratis
+                <div
+                  class="ms-2 d-flex align-items-center d-inline-flex"
+                  id="divFlecha2">
+                  <i class="bi bi-arrow-right primeraFlecha"></i
+                  ><i
+                    class="bi bi-arrow-right ms-1 segundaFlecha me-1 btn pt-1 pb-1"></i>
+                </div>
               </button>
             </div>
-            <div class="mt-5 position-relative mx-auto d-flex justify-content-center" id="laptopcontainer">
+            <div
+              class="mt-5 position-relative mx-auto d-flex justify-content-center"
+              id="laptopcontainer">
               <img
                 src="./public/laptop.png"
                 alt="laptop"
@@ -422,69 +702,298 @@
                 muted
                 loop></video>
             </div>
-            
+
             <div class="mt-5"></div>
           </div>
         </div>
         <section class="mt-5 mb-5" id="banner">
-          <div id="bannerContainer" class="">
-            <h3 class="fw-bold display-5">
-              Su paquete completo de herramientas de video
-            </h3>
-            <p id="bannerTitle" class="mt-4">
-              Obtenga todo lo que necesita para editar, gestionar y publicar
-              videos impactantes que generen resultados.
-            </p>
-            <button class="mt-4 mb-5 btn ps-4 pt-2 pb-2 pe-3 fw-bold" id="btnAzul">
-             Solicitar una demostracion<div class="ms-2 d-flex align-items-center d-inline-flex" id="divFlecha"><i class="bi bi-arrow-right primeraFlechaAzul"></i><i class="bi bi-arrow-right ms-1 segundaFlecha btn pt-1 pb-1 "></i></div>
-            </button>
+          <div id="bannerContainer">
+            <div class="container" id="contenedorDelBanner">
+              <h3 class="fw-bold display-5">
+                Su paquete completo de herramientas de video
+              </h3>
+              <p id="bannerTitle" class="mt-4">
+                Obtenga todo lo que necesita para editar, gestionar y publicar
+                videos impactantes que generen resultados.
+              </p>
+              <button
+                class="mt-2 mb-5 btn ps-4 pt-2 pb-2 pe-3 fw-bold"
+                id="btnAzul">
+                Solicitar una demostracion
+                <div
+                  class="ms-2 d-flex align-items-start d-inline-flex"
+                  id="divFlecha">
+                  <i class="bi bi-arrow-right primeraFlechaAzul"></i
+                  ><i
+                    class="bi bi-arrow-right ms-1 segundaFlecha btn pt-1 pb-1"></i>
+                </div>
+              </button>
+            </div>
           </div>
         </section>
         <section class="mt-5">
-        <div
-          style="
-            background-color: rgb(241, 245, 249);
-            margin-top: -48px;
-          ">
-          <div class="d-flex justify-content-center align-items-center">
-            <h3
-              class="text-center text-black mt-5 mb-5 fs-2"
-              style="max-width: 40%; word-wrap: break-word;">
-              La plataforma de confianza de 287 millones de creadores,
-              empresarios y negocios
-            </h3>
-          </div>
-          <div class="mt-2 container-fluid w-50">
-            <div class="carrousel-container">
-              <div class="d-flex" id="carrousel">
-                <img src="./public/deloitte.avif" alt="Deloitte" class="slider-image">
-                <img src="./public/warner.avif" alt="Warner" class="slider-image">
-                <img src="./public/riteaid.avif" alt="Rite Aid" class="slider-image">
-                <img src="./public/santander.png" alt="Santander" class="slider-image">
-                <img src="./public/zendesk.png" alt="Zendesk" class="slider-image">
-                <!-- Duplicamos las imágenes para que la animación sea infinita -->
-                <img src="./public/deloitte.avif" alt="Deloitte" class="slider-image">
-                <img src="./public/warner.avif" alt="Warner" class="slider-image">
-                <img src="./public/riteaid.avif" alt="Rite Aid" class="slider-image">
-                <img src="./public/santander.png" alt="Santander" class="slider-image">
-                <img src="./public/zendesk.png" alt="Zendesk" class="slider-image">
+          <div style="background-color: rgb(241, 245, 249); margin-top: -48px">
+            <div class="d-flex justify-content-center align-items-center">
+              <h3
+                class="text-center text-black mt-5 mb-5 fs-2"
+                style="max-width: 40%; word-wrap: break-word">
+                La plataforma de confianza de 287 millones de creadores,
+                empresarios y negocios
+              </h3>
+            </div>
+            <div class="mt-2 container w-50">
+              <div class="carrousel-container">
+                <div class="d-flex" id="carrousel">
+                  <img
+                    src="./public/deloitte.avif"
+                    alt="Deloitte"
+                    class="slider-image" />
+                  <img
+                    src="./public/warner.avif"
+                    alt="Warner"
+                    class="slider-image" />
+                  <img
+                    src="./public/riteaid.avif"
+                    alt="Rite Aid"
+                    class="slider-image" />
+                  <img
+                    src="./public/santander.png"
+                    alt="Santander"
+                    class="slider-image" />
+                  <img
+                    src="./public/zendesk.png"
+                    alt="Zendesk"
+                    class="slider-image" />
+                  <!-- Duplicamos las imágenes para que la animación sea infinita -->
+                  <img
+                    src="./public/deloitte.avif"
+                    alt="Deloitte"
+                    class="slider-image" />
+                  <img
+                    src="./public/warner.avif"
+                    alt="Warner"
+                    class="slider-image" />
+                  <img
+                    src="./public/riteaid.avif"
+                    alt="Rite Aid"
+                    class="slider-image" />
+                  <img
+                    src="./public/santander.png"
+                    alt="Santander"
+                    class="slider-image" />
+                  <img
+                    src="./public/zendesk.png"
+                    alt="Zendesk"
+                    class="slider-image" />
+                </div>
               </div>
             </div>
           </div>
-            
-        </div>
         </section>
-        <div class="container-fluid py-5 text-center">
-          <p class="text-grey mb-4 fs-4 text-center">
-            Las mejores experiencias de video en Internet, en un mismo lugar
-          </p>
-          <h3 class="display-3 fw-bold text-center w-50 mx-auto">
-            Su plataforma de video impulsada por IA
-          </h3>
-        </div>
+        <section class="casos-de-uso1">
+          <div class="container-fluid py-5 text-center">
+            <p class="text-grey mb-4 fs-4 text-center">
+              Las mejores experiencias de video en Internet, en un mismo lugar
+            </p>
+            <h3 class="display-3 fw-bold text-center w-50 mx-auto">
+              Su plataforma de video impulsada por IA
+            </h3>
+          </div>
+          <div class="p-3 row g-3 container mx-auto">
+            <div
+              class="ms-2 col-md-12 d-flex align-items-start text-start primerArticulo">
+              <img
+                src="./public/primerArticulo.avif"
+                class="w-50"
+                alt="Alojamiento y reproductor" />
+              <div
+                class="d-flex flex-column align-items-start ms-5 texto-Centrado">
+                <h2 class="">Alojamiento y reproductor</h2>
+                <p class="">
+                  Aloje sus videos con nuestro reproductor HD sin anuncios.
+                  Dondequiera que los inserte o comparta, su diseño de
+                  reproductor personalizado y su marca los acompañarán.
+                </p>
+                <div class="btn fw-bold" id="btnFlecha">
+                  <div
+                    class="d-flex align-items-center d-inline-flex"
+                    id="divFlecha">
+                    <i class="bi bi-arrow-right primeraFlecha"></i
+                    ><i
+                      class="bi bi-arrow-right ms-1 segundaFlecha me-1 btn pt-1 pb-1"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="h-100 articuloFlecha g-3">
+                <img
+                  src="./public/segundoArticulo.avif"
+                  class="w-100 rounded-4"
+                  alt="Creación y edición" />
+                <div
+                  class="d-flex flex-column mt-5 align-items-start texto-Centrado">
+                  <h2 class="fw-bold">Creación y edición</h2>
+                  <p class="">
+                    Cree y edite sus videos con nuestras sencillas herramientas.
+                    Agregue efectos, texto y más para que sus videos se
+                    destaquen.
+                  </p>
+                  <div class="btn fw-bold mt-5 ms-5 mb-5" id="btnFlecha">
+                    <div
+                      class="d-flex align-items-center d-inline-flex"
+                      id="divFlecha">
+                      <i class="bi bi-arrow-right primeraFlecha"></i
+                      ><i
+                        class="bi bi-arrow-right ms-1 segundaFlecha me-1 btn pt-1 pb-1"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="h-100 articuloFlecha g-3">
+                <img
+                  src="./public/tercerArticulo.avif"
+                  class="w-100 rounded-4"
+                  alt="Creación y edición" />
+                <div
+                  class="d-flex flex-column mt-5 align-items-start texto-Centrado">
+                  <h2 class="fw-bold">Transmisiones en vivo y eventos</h2>
+                  <p class="">
+                    Transmita sus eventos en vivo o alójelos on-demand. Nuestras
+                    herramientas le permiten compartir fácilmente su contenido
+                    con el resto del mundo.
+                  </p>
+                  <div class="btn fw-bold mt-5 ms-5 mb-5" id="btnFlecha">
+                    <div
+                      class="d-flex align-items-center d-inline-flex"
+                      id="divFlecha">
+                      <i class="bi bi-arrow-right primeraFlecha"></i
+                      ><i
+                        class="bi bi-arrow-right ms-1 segundaFlecha me-1 btn pt-1 pb-1"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="h-100 articuloFlecha g-3">
+                <img
+                  src="./public/cuartoArticulo.avif"
+                  class="w-100 rounded-4"
+                  alt="Creación y edición" />
+                <div
+                  class="d-flex flex-column mt-5 align-items-start texto-Centrado">
+                  <h2 class="fw-bold">Gestión de video</h2>
+                  <p class="">
+                    Mantenga sus videos organizados y seguros. Nuestras
+                    herramientas facilitan la gestión de su videoteca y
+                    mantienen su contenido seguro.
+                  </p>
+                  <div class="btn fw-bold mt-5 ms-5 mb-5" id="btnFlecha">
+                    <div
+                      class="d-flex align-items-center d-inline-flex"
+                      id="divFlecha">
+                      <i class="bi bi-arrow-right primeraFlecha"></i
+                      ><i
+                        class="bi bi-arrow-right ms-1 segundaFlecha me-1 btn pt-1 pb-1"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="h-100 articuloFlecha g-3">
+                <img
+                  src="./public/quintoArticulo.avif"
+                  class="w-100 rounded-4"
+                  alt="Creación y edición" />
+                <div
+                  class="d-flex flex-column mt-5 align-items-start texto-Centrado">
+                  <h2 class="fw-bold">Monetización</h2>
+                  <p class="">
+                    Gane dinero con sus videos con nuestras herramientas de
+                    monetización. Agregue anuncios, suscripciones y más a sus
+                    videos.
+                  </p>
+                  <div class="btn fw-bold mt-5 ms-5 mb-5" id="btnFlecha">
+                    <div
+                      class="d-flex align-items-center d-inline-flex"
+                      id="divFlecha">
+                      <i class="bi bi-arrow-right primeraFlecha"></i
+                      ><i
+                        class="bi bi-arrow-right ms-1 segundaFlecha me-1 btn pt-1 pb-1"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="casos-de-uso2">
+          <div class="container-fluid py-5 text-center">
+            <h3 class="text-grey mb-3 fs-3 text-center">Casos de uso</h3>
+            <h3 class="display-5 fw-bold text-center w-50 mx-auto">
+              Cómo utilizan Vimeo los clientes
+            </h3>
+          </div>
+          <div class="col-md-12 container mx-auto row">
+            <div class="col-md-4">
+              <div class="h-100 casosDeUso" id="casosDeUso1">
+                <img src="./public/casosDeUso1.avif" alt="Creación y edición" />
+                <div
+                  class="d-flex flex-column align-items-start texto-Centrado">
+                  <h2 class="fs-5">Morgan Cooper</h2>
+                  <p class="fw-bold text-grey">
+                    Este director destacado, tres veces elegido por el personal,
+                    comparte sus cortometrajes profundamente personales e
+                    impactantes con Vimeo.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="h-100 casosDeUso" id="casosDeUso2">
+                <img src="./public/casosDeUso2.avif" alt="Creación y edición" />
+                <div
+                  class="d-flex flex-column align-items-start texto-Centrado">
+                  <h2 class="fs-5">Vermicular</h2>
+                  <p class="fw-bold text-grey">
+                    La inversión en video de Vermicular impulsa el alcance
+                    global y crea activos de marketing reutilizables.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="h-100 casosDeUso" id="casosDeUso3">
+                <img src="./public/casosDeUso3.avif" alt="Creación y edición" />
+                <div
+                  class="d-flex flex-column align-items-start texto-Centrado">
+                  <h2 class="fs-5">Stellantis</h2>
+                  <p class="fw-bold text-grey">
+                    Con 300 000 empleados en todo el mundo, Stellantis confía en
+                    Vimeo para su enseñanza virtual basada en video a nivel
+                    mundial.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="container mt-5">
+        <div class="row">
+        </div>
+
+    </footer>
+    <script type="module" src="./main.js"></script>
   </body>
-  <script type="module" src="./main.js"></script>
 </html>
