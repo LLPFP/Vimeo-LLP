@@ -620,46 +620,71 @@ h1 {
 
 #casosDeUso1 {
   width: 100%;
-  transition: width 0.45s ease-in-out;
+  transition: width 0.35s ease-in-out;
 }
 
 #casosDeUso1:hover {
   width: 200%;
-  transition: all 0.45s ease-in-out;
+  transition: all 0.35s ease-in-out;
 }
 
+// Animacion primer caso de uso
 .col-md-4:has(#casosDeUso1:hover) ~ .col-md-4 #casosDeUso2 {
-  translate: 200%;
   width: 50%;
-  transition: all 0.55s ease-in-out;
+  margin-left: 100%;
+  transition: all 0.35s ease-in-out;
+}
+.col-md-4:has(#casosDeUso1:hover) ~ .col-md-4 #casosDeUso3 {
+  width: 50%;
+  margin-left: 50%;
+  transition: all 0.35s ease-in-out;
 }
 
-.col-md-4:has(#casosDeUso1:hover) ~ .col-md-4 #casosDeUso3 {
-  translate: 100%;
+// Animacion segundo caso de uso
+.row:has(#casosDeUso2:hover) .col-md-4 #casosDeUso1 {
   width: 50%;
-  transition: all 0.4s ease-in-out;
+  margin-left: 0%;
+  transition: all 0.35s ease-in-out;
+}
+
+.col-md-4:has(#casosDeUso2:hover) ~ .col-md-4 #casosDeUso3 {
+  width: 50%;
+  margin-left: 50%;
+  transition: all 0.35s ease-in-out;
+}
+
+// Animacion tercer caso de uso
+.row:has(#casosDeUso3:hover) .col-md-4 #casosDeUso1 {
+  width: 50%;
+  margin-left: 0%;
+  transition: all 0.35s ease-in-out;
+}
+.row:has(#casosDeUso3:hover) .col-md-4 #casosDeUso2 {
+  width: 50%;
+  margin-left: -50%;
+  transition: all 0.35s ease-in-out;
 }
 
 #casosDeUso2 {
   width: 100%;
   margin-left: 0%;
-  transition: all 0.45s ease-in-out;
+  transition: all 0.35s ease-in-out;
 
   &:hover {
     width: 200%;
     margin-left: -50%;
-    transition: all 0.45s ease-in-out;
+    transition: all 0.35s ease-in-out;
   }
 }
 
 #casosDeUso3 {
   width: 100%;
   margin-left: 0%;
-  transition: all 0.7s ease-in-out;
+  transition: all 0.35s ease-in-out;
 
   &:hover {
     width: 200%;
     margin-left: -100%;
-    transition: all 0.45s ease-in-out;
+    transition: all 0.35s ease-in-out;
   }
 }
