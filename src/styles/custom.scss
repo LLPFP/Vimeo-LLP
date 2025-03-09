@@ -77,6 +77,7 @@ body {
 }
 
 .btnAzul:hover {
+  color: #000;
   background: linear-gradient(
     to left,
     rgb(19, 167, 206) 50%,
@@ -225,7 +226,7 @@ body {
     transition: background-color 0.45s ease;
 
     .segundaFlecha {
-      transform: translateX(0);
+      transform: translateX(0%);
       transition: transform 0.45s ease;
     }
     .primeraFlecha {
