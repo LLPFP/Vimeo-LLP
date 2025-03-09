@@ -688,3 +688,105 @@ h1 {
     transition: all 0.35s ease-in-out;
   }
 }
+
+footer {
+  background-color: rgb(10, 14, 18);
+  color: #fafcfd;
+  a {
+    color: #fafcfd;
+    font-size: 18px;
+  }
+}
+
+#btnFooter {
+  color: #ffffff; /* El texto siempre será negro */
+  position: relative;
+  overflow: hidden;
+  border: none;
+  border-radius: 8px;
+  margin-top: 5px;
+  font-size: 18px;
+}
+
+#btnFooter:hover {
+  background: linear-gradient(
+    to left,
+    rgb(37, 211, 254) 50%,
+    rgb(40, 49, 58) 50%
+  );
+  background-size: 200% 100%;
+  background-position: right;
+  transition: background-position 0.45s ease;
+  right: 0;
+
+  #divFlecha {
+    background-color: rgb(19, 167, 206);
+
+    .segundaFlecha {
+      transform: translateX(100%);
+      transition: transform 0.45s ease;
+    }
+    .primeraFlechaAzul {
+      transform: translateX(200%);
+      transition: transform 0.45s ease;
+    }
+  }
+}
+
+#btnFooter:not(:hover) {
+  background: linear-gradient(
+    to left,
+    rgb(19, 167, 206) 50%,
+    rgb(40, 49, 58) 50%
+  );
+  background-size: 200% 100%;
+  background-position: left;
+  transition: background-position 0.45s ease;
+
+  #divFlecha {
+    background-color: rgb(19, 167, 206);
+
+    .segundaFlecha {
+      transform: translateX(0%);
+      transition: transform 0.45s ease;
+    }
+    .primeraFlechaAzul {
+      transform: translateX(-105%);
+      transition: opacity 0.45s ease, transform 0.45s ease;
+    }
+  }
+}
+
+.enlacesFooter {
+  p,
+  a {
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: -15px;
+  }
+}
+
+.margenFooter {
+  margin-top: 75px;
+}
+
+#idioma {
+  margin-top: -15px;
+  padding-top: 2px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  color: #f1f5f9;
+  border-radius: 8px;
+  background-color: rgb(40, 49, 58);
+  margin-bottom: 50px;
+  border-color: rgb(40, 49, 58);
+}
+
+#derechosReservados {
+  margin-top: 15px;
+  margin-left: 320px;
+
+  a {
+    font-size: 15px;
+  }
+}
