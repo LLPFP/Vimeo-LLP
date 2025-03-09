@@ -28,7 +28,7 @@ body {
   margin-top: 2px;
 }
 
-#btnUnirse {
+.btnUnirse {
   background-color: rgb(223, 228, 234);
   color: #000; /* El texto siempre será negro */
   position: relative;
@@ -40,12 +40,12 @@ body {
   transition: transform 0.3s ease;
 }
 
-#btnUnirse #divFlecha {
+.btnUnirse .divFlecha {
   background-color: rgb(37, 209, 254);
   border-radius: 7px;
 }
 
-#btnFlecha {
+.btnFlecha {
   color: #000; /* El texto siempre será negro */
   position: relative;
   overflow: hidden;
@@ -55,17 +55,17 @@ body {
   transform: scale(1.3);
 }
 
-#btnFlecha #divFlecha {
+.btnFlecha .divFlecha {
   background-color: rgb(37, 209, 254);
   border-radius: 7px;
 }
 
-#btnAzul #divFlecha {
+.btnAzul .divFlecha {
   background-color: rgb(19, 167, 206);
   border-radius: 7px;
 }
 
-#btnAzul {
+.btnAzul {
   background-color: rgb(37, 209, 254);
   color: #000; /* El texto siempre será negro */
   position: relative;
@@ -76,7 +76,7 @@ body {
   font-size: 17px;
 }
 
-#btnAzul:hover {
+.btnAzul:hover {
   background: linear-gradient(
     to left,
     rgb(19, 167, 206) 50%,
@@ -86,8 +86,9 @@ body {
   background-position: right;
   transition: background-position 0.45s ease;
   right: 0;
+  background-clip: padding-box;
 
-  #divFlecha {
+  .divFlecha {
     background-color: rgb(37, 209, 254);
     transition: background-color 0.45s ease;
 
@@ -102,17 +103,18 @@ body {
   }
 }
 
-#btnAzul:not(:hover) {
+.btnAzul:not(:hover) {
   background: linear-gradient(
     to left,
     rgb(19, 167, 206) 50%,
-    rgb(37, 209, 254) 50%
+    rgb(37, 209, 254) 0%
   );
   background-size: 200% 100%;
   background-position: left;
   transition: background-position 0.45s ease;
+  background-clip: padding-box;
 
-  #divFlecha {
+  .divFlecha {
     background-color: rgb(19, 167, 206);
 
     transition: background-color 0.45s ease;
@@ -128,19 +130,19 @@ body {
   }
 }
 
-#divFlecha {
+.divFlecha {
   overflow: hidden;
   position: relative;
   border-radius: 6px;
 }
 
-#divFlecha2 {
+.divFlecha2 {
   border-radius: 6px;
   overflow: hidden;
   position: relative;
 }
 
-#btnUnirse:hover {
+.btnUnirse:hover {
   background: linear-gradient(
     to left,
     rgb(37, 209, 254) 50%,
@@ -149,9 +151,9 @@ body {
   background-size: 200% 100%;
   background-position: right;
   transition: background-position 0.45s ease;
-  right: 0;
+  background-clip: padding-box;
 
-  #divFlecha {
+  .divFlecha {
     background-color: rgb(19, 167, 206);
     transition: background-color 0.45s ease;
 
@@ -165,7 +167,7 @@ body {
     }
   }
 
-  #divFlecha2 {
+  .divFlecha2 {
     background-color: rgb(19, 167, 206);
     transition: background-color 0.45s ease;
 
@@ -190,12 +192,12 @@ body {
   position: absolute;
 }
 
-#divFlecha .primeraFlechaAzul {
+.divFlecha .primeraFlechaAzul {
   margin-left: -20px;
   position: absolute;
 }
 
-#btnUnirse:not(:hover) {
+.btnUnirse:not(:hover) {
   background: linear-gradient(
     to left,
     rgb(37, 209, 254) 50%,
@@ -204,8 +206,8 @@ body {
   background-size: 200% 100%;
   background-position: left;
   transition: background-position 0.45s ease;
-
-  #divFlecha {
+  background-clip: padding-box;
+  .divFlecha {
     background-color: rgb(37, 209, 254);
     transition: background-color 0.45s ease;
 
@@ -218,7 +220,7 @@ body {
       transition: opacity 0.45s ease, transform 0.45s ease;
     }
   }
-  #divFlecha2 {
+  .divFlecha2 {
     background-color: rgb(255, 255, 255);
     transition: background-color 0.45s ease;
 
@@ -530,7 +532,7 @@ h1 {
       width: 85%;
     }
   }
-  #btnFlecha {
+  .btnFlecha {
     margin-top: 20px;
     margin-left: -5px;
   }
@@ -558,7 +560,7 @@ h1 {
       font-size: 20px;
       width: 85%;
     }
-    #btnFlecha {
+    .btnFlecha {
       margin-top: 20px;
     }
     img {
@@ -570,8 +572,8 @@ h1 {
 
 .primerArticulo,
 .articuloFlecha {
-  &:hover #btnFlecha {
-    #divFlecha {
+  &:hover .btnFlecha {
+    .divFlecha {
       background-color: rgb(19, 167, 206);
       transition: background-color 0.45s ease;
 
@@ -585,7 +587,7 @@ h1 {
       }
     }
 
-    #divFlecha2 {
+    .divFlecha2 {
       background-color: rgb(19, 167, 206);
       transition: background-color 0.45s ease;
 
@@ -600,8 +602,8 @@ h1 {
     }
   }
 
-  &:not(:hover) #btnFlecha {
-    #divFlecha {
+  &:not(:hover) .btnFlecha {
+    .divFlecha {
       background-color: rgb(37, 209, 254);
       transition: background-color 0.45s ease;
 
@@ -614,7 +616,7 @@ h1 {
         transition: opacity 0.45s ease, transform 0.45s ease;
       }
     }
-    #divFlecha2 {
+    .divFlecha2 {
       background-color: rgb(255, 255, 255);
       transition: background-color 0.45s ease;
 
@@ -757,7 +759,7 @@ footer {
   transition: background-position 0.45s ease;
   right: 0;
 
-  #divFlecha {
+  .divFlecha {
     background-color: rgb(19, 167, 206);
 
     .segundaFlecha {
@@ -781,7 +783,7 @@ footer {
   background-position: left;
   transition: background-position 0.45s ease;
 
-  #divFlecha {
+  .divFlecha {
     background-color: rgb(19, 167, 206);
 
     .segundaFlecha {
