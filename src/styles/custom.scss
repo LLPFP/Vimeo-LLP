@@ -9,6 +9,7 @@ body {
 .itemsMenu {
   border-radius: 8px;
 }
+
 .itemsMenu:hover {
   background-color: rgb(223, 228, 234);
   border-radius: 8px;
@@ -381,8 +382,18 @@ h1 {
     font-weight: bold;
     text-align: center;
   }
+  a {
+    color: #000;
+    &:hover {
+      color: rgb(22, 205, 247);
+      transition: color 0.3s ease;
+    }
+    &:not(:hover) {
+      color: #000;
+      transition: color 0.3s ease;
+    }
+  }
 }
-
 #menuDropdown2 {
   width: 1280px;
   margin-top: 10px;
@@ -396,6 +407,18 @@ h1 {
     font-size: 1.3rem;
     font-weight: bold;
     text-align: center;
+  }
+
+  a {
+    color: #000;
+    &:hover {
+      color: rgb(22, 205, 247);
+      transition: color 0.3s ease;
+    }
+    &:not(:hover) {
+      color: #000;
+      transition: color 0.3s ease;
+    }
   }
 }
 
@@ -412,6 +435,18 @@ h1 {
     font-size: 1.3rem;
     font-weight: bold;
     text-align: center;
+  }
+
+  a {
+    color: #000;
+    &:hover {
+      color: rgb(22, 205, 247);
+      transition: color 0.3s ease;
+    }
+    &:not(:hover) {
+      color: #000;
+      transition: color 0.3s ease;
+    }
   }
 }
 
@@ -695,6 +730,9 @@ footer {
   a {
     color: #fafcfd;
     font-size: 18px;
+    &:hover {
+      color: rgb(22, 205, 247);
+    }
   }
 }
 
@@ -789,4 +827,41 @@ footer {
   a {
     font-size: 15px;
   }
+}
+
+/** 
+ *  Animaciones finales
+ **/
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animadoTitulo {
+  animation: fadeInUp 0.5s ease-out forwards;
+  opacity: 0;
+}
+
+.animadoTexto,
+.animadoBotones {
+  animation: fadeInUp 0.5s ease-out 0.5s forwards;
+  opacity: 0;
+}
+
+.animado {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.animado.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
